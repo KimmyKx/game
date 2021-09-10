@@ -1,0 +1,159 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #ddd;
+	font-family: monospace, arial, sans-serif;
+}
+
+
+.container {
+	max-width: 500px;
+	margin: auto;
+	border: 5px solid black;
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+	border-radius: 30px;
+	background-color: white;
+	overflow: hidden;
+	flex: 1;
+}
+
+.status {
+	background-color: black;
+	height: 70px;
+	width: 100%;
+	color: white;
+	line-height: 50px;
+	font-size: 20px;
+	padding: 10px;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.status i {
+	color: white;
+	font-size: 25px;
+}
+
+.nav {
+	width: 100%;
+	height: 50px;
+	background-color: black;
+	color: white;
+	text-align: center;
+	display: flex;
+	justify-content: space-evenly; 
+}
+
+.nav p {
+	font-size: 30px;
+	position: relative;
+	top: -20px;
+	cursor: pointer;
+}
+
+.nav p.active {
+	color: #008000;
+}
+
+.moreSet {
+	position: absolute;
+	width: 0;
+	height: 200px;
+	background-color: black;
+	border-radius: 10px;
+	top: 35%;
+	left: 30%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	color: white;
+	text-align: center;
+	justify-content: center;
+}
+
+.moreSet .closeSet {
+	cursor: pointer;
+}
+
+.nav .start {
+	cursor: pointer;
+}
+
+.board {
+	width: 500px;
+	height: 500px;
+	position: relative;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.count {
+	text-align: center;
+	font-size: 40px;
+	position: absolute;
+	top: 45%;
+	left: 45%;
+	margin: auto;
+}
+
+.box {
+	background-color: tomato;
+	border-radius: 20%;
+	width: 1px;
+	height: 1px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+/* Game Over */
+.gameOver {
+	width: 0;
+	position: fixed;
+	left: 0;
+	top: 0;
+	overflow: hidden;
+	background-color: rgba(0,0,0,.5);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.over-board {
+	max-width: 400px;
+	height: 300px;
+	background-color: black;
+	border-radius: 20px;
+	color: white;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.over-board h2 {
+	font-size: 17px;
+}
+
+.over-board p {
+	cursor: pointer;
+}
+
+@keyframes pop {
+	0% {
+		transform: scale(0);
+	}
+	50% {
+		transform: scale(40);
+	}
+	100% {
+		transform: scale(0);
+	}
+}

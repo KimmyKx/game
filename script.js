@@ -90,7 +90,7 @@ function game() {
 	
 	if (over()) return;
 	let ran1 = Math.floor(Math.random() * 400 - 100 + 50) + 100;
-	let ran2 = Math.floor(Math.random() * 400 - 100 + 50) + 100;
+	let ran2 = Math.floor(Math.random() * 350 - 100 + 50) + 100;
 	let click =  false;
 	const newBox = document.createElement('div');
 	container.appendChild(newBox);
